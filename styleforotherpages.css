@@ -1,0 +1,56 @@
+
+h1 {
+    margin: 1.5rem;
+}
+
+.grid-sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    padding: 20px;
+    margin-bottom: 3em;
+}
+
+.gridbox {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 200ms;
+}
+
+.gridbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.123);
+}
+
+.image-box {
+    background: #ffffffd8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.image-box img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.grid-info {
+    padding: 15px;
+    border-top: 1px solid #eeeeeeea;
+}
+
+.grid-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333333f3;
+}
+
+@media screen and (max-width: 800px) {
+    .grid-sec {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

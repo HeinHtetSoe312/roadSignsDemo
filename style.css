@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.web-header {
+    width: 100%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
+#navbar a:hover {
+    background-color: rgb(6, 50, 131);
+    color: aliceblue;
+    transition: 80ms ease-in-out;
+}
+
+.homescreen {
+    margin: 2rem;
+}
+
+.homescreen div h1 {
+    margin-bottom: 0.5rem;
+}
+
+.homescreen div p {
+    max-width: 70%;
+}
+
+.explore-sec {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+.explore-sec .sign-sec {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    padding: 2em;
+}
+
+.explore-sec .sign-sec:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.123);
+    transition: 200ms ease-in-out;
+}
+
+.explore-sec .sign-sec .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.explore-sec .sign-sec .image-box img {
+    max-width: 50%;
+}
+
+.explore-sec a {
+    text-decoration: none;
+    color: black;
+}
+
+.explore-sec .sign-info {
+    max-width: 50%;
+    max-height: fit-content;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.odd-one-out {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2em;
+}
+
+.odd-one-out a {
+    text-decoration: none;
+    color: black;
+}
+
+.odd-one-out .odd-sign-sec:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.123);
+    transition: 200ms ease-in-out;
+}
+
+.odd-sign-sec {
+    display: flex;
+    flex-direction: column;    
+    gap: 1.5rem;
+    padding: 2em;
+    max-width: 700px;       
+    width: 100%;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.odd-image-box img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.odd-sign-info {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #navbar {
+        text-align: center;
+    }
+
+    .homescreen div {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .homescreen div p {
+        max-width: 100%;
+    }
+
+    .explore-sec {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .explore-sec .sign-sec {
+        display: flex;
+        flex-direction: column;
+        
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        transition: transform 200ms;
+    }
+
+    .explore-sec .sign-sec .image-box {
+        background: #ffffffd8;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        max-width: 100%;
+    }
+
+    .explore-sec .sign-sec .image-box img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .explore-sec .sign-sec .sign-info {
+        padding: 15px;
+        border-top: 1px solid #eeeeeeea;
+        max-width: 100%;
+    }
+
+    .explore-sec .sign-sec .sign-info h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.2rem;
+        color: #333333f3;
+    }
+
+    #navbar {
+        flex-direction: column-reverse;
+    }
+    
+    .odd-one-out {
+        margin-inline: 1.75rem;
+    }
+
+    .odd-image-box img {
+        width: 110px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+#citations {
+    font-family: sans-serif;
+    background-color: rgb(25, 13, 70);
+    color: aliceblue;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#citations p small a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
